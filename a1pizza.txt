@@ -1,0 +1,44 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int option_1(int numPeople);
+int option_2(float numPeople);
+
+int main()
+{
+    
+    int num_people;
+    
+    printf("Number of people: ");
+    scanf("%d", &num_people);
+    
+    option_1(num_people);
+    printf("\n");
+    option_2(num_people);
+    
+    return 0;
+}
+
+int option_1(int numPeople) {
+    int each_person = 32 / numPeople;
+    int pizza_left = 32 % numPeople;
+    
+    printf("Option 1: %d slices each, %d left over", each_person, pizza_left);
+    
+    return 0;
+}
+
+int option_2(float numPeople) {
+    float each_person = 32 / numPeople;
+    
+    printf("Option 2: %f slices each", each_person);
+    
+    return 0;
+}

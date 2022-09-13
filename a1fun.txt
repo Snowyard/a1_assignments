@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("\n--------------------------------\n");
+    printf("FFFFFFF     U     U     NN    NN\n");
+    printf("FF          U     U     NNN   NN\n");
+    printf("FFFFFFF     U     U     NN N  NN\n");
+    printf("FF           U   U      NN  N NN\n");
+    printf("FF            UUU       NN   NNN\n");
+    printf("--------------------------------\n");
+    return 0;
+}
