@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int math_trick( int num);
+
+int main()
+{
+    
+    int num;
+    printf("Enter a whole number: ");
+    scanf("%d", &num);
+    
+    math_trick(num);
+    
+
+    return 0;
+}
+
+int math_trick(int num) {
+    int input = num;
+    
+    num = num + 3;
+    printf("\nStep 1. Add 3 to input : %d\n", num);
+    num = num * 2;
+    printf("Step 2. Multiply sum by 2 : %d\n", num);
+    num = num - 4;
+    printf("Step 3. Subtract 4 from product : %d\n", num);
+    num = num / 2;
+    printf("Step 4. Divide difference by 2 to get quotient : %d\n", num);
+    num = num - input;
+    printf("Step 5. Subtract original whole number from quotient : %d\n", num);
+    
+    return 0;
+}
